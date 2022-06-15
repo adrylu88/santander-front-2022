@@ -21,16 +21,19 @@ button{
 .header {
    /* margin-top: 40px;
     margin-left: 20px;
-    margin-right: 20px;*/
+    margin-right: 20px;
+    con margin se puede declarar los 3 valores*/
     margin: 40px 20px 0;
     font-size: 0;
+    font-family: sans-serif;/*Todos los textos dentro de la barra de navegación deben usar la fuente sans-serif y el alto de la barra debe ser de 45px.*/
+    height: 45px;
   }
 
   li{
     display:inline;
   }
 
-  .header>*{
+  .header>*{ /*se refiere a todas la class header que encuentre asi como sus hijos*/
     display: inline-block;
     font-size: 16px;
     line-height: 45px;
@@ -47,21 +50,52 @@ button{
     width: 15%;
   }
 
+  /*El texto del menú de navegación debe tener una separación a los costados de 25px, además debe ser del color #025157*/
   .navbar{
     width: 70%;
-    text-align: center;
+    text-align: left;
     color: #025157;
     font-weight:500;
   }
 
+  .menu-item {
+    display: inline;
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+
+  /*El tamaño de fuente para las acciones debe ser de 14px y cada una de las acciones debe tener una 
+  separación hacia los lados de 10px. El color del texto Sign In debe ser #67b54b y el botón de Start
+   free trial debe tener color de texto blanco, color de fondo #67b54b, un relleno de 14px hacia los 
+   costados y 12px en la parte inferior y superior. Por último el botón no debe tener borde, 
+   pero un radio de borde de 5px para tener esquinas redondeadas.*/
   .actions{
     width: 15%;
-    text-align: right;
+    text-align: left;
     font-size: 14px;
     font-weight: 600;
+  }
+  .actions > * {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
   .main{
     margin-top: 140px;
     text-align: center;
+  }
+
+  .actions a {
+    color: #67b54b;
+  }
+  
+  .actions button {
+    color: white;
+    background-color: #67b54b;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 0;
+    border-radius: 5px;
   }
