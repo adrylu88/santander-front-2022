@@ -19,9 +19,10 @@ button{
 }
 
 .header {
-    margin-top: 40px;
+   /* margin-top: 40px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px;*/
+    margin: 40px 20px 0;
     font-size: 0;
   }
 
@@ -35,6 +36,7 @@ button{
     line-height: 45px;
     height: 100%;
     vertical-align: middle;
+    
   }
 
   .logo{
@@ -57,4 +59,9 @@ button{
     text-align: right;
     font-size: 14px;
     font-weight: 600;
+  }
+
+  .main{
+    margin-top: 140px;
+    text-align: center;
   }
